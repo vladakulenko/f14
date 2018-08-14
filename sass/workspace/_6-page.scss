@@ -1,0 +1,58 @@
+//header
+header {
+  width: 100%;
+  padding-top: 3.5rem;
+  position: absolute;
+  z-index: 10;
+}
+
+//content
+.content {
+  width: 83.45%;
+  margin: 0 auto;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//section one
+.one {
+  background-image: url("../img/b-one.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 18rem;
+  position: relative;
+}
+
+.one:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: $black;
+  opacity: 0.3;
+}
+
+//main-menu
+.main-menu ul li {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.main-menu ul li:first-child {
+  margin-left: 0;
+}
+
+.main-menu ul li a {
+  font-size: $f12;
+  text-transform: uppercase;
+  font-family: $ar;
+  color: $black;
+  opacity: 0.3;
+}

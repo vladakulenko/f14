@@ -7,12 +7,14 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  border: 1px solid transparent;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
 div {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative; }
 
 html {
@@ -25,23 +27,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   letter-spacing: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 a {
   cursor: pointer;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 img {
   border: none; }
@@ -61,103 +61,78 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: "Montserrat-Medium";
-  src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot");
+  font-family: "Merriweather-Black";
+  src: url("../fonts/Merriweather-Black/Merriweather-Black.eot");
   /* IE9 Compat Modes */
-  src: url("../fontsMontserrat-Medium/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.svg#svgMontserrat-Medium") format("svg");
+  src: url("../fonts/Merriweather-Black/Merriweather-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Black/Merriweather-Black.woff2") format("woff2"), url("../fonts/Merriweather-Black/Merriweather-Black.woff") format("woff"), url("../fonts/Merriweather-Black/Merriweather-Black.ttf") format("truetype"), url("../fonts/Merriweather-Black/Merriweather-Black.svg#Merriweather-Black") format("svg");
   /* Legacy iOS */
   font-weight: normal;
   font-style: normal; }
 
-/*  Reset */
-/*
-test
-*/
-html, body {
-  height: 100%;
+.h1 {
+  font-size: 4.8rem;
+  color: #fff;
+  font-family: "arial"; }
+
+.font-logo {
+  font-size: 2.4rem;
+  font-family: "Merriweather-Black";
+  color: #fff; }
+
+header {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  padding-top: 3.5rem;
+  position: absolute;
+  z-index: 10; }
 
-div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative; }
+.content {
+  width: 83.45%;
+  margin: 0 auto; }
 
-html {
-  overflow: auto !important; }
-
-body {
-  zoom: 1; }
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  letter-spacing: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-img {
-  border: none; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fontsMontserrat-Medium/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.svg#svgMontserrat-Medium") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal; }
-
-div {
-  outline: 1px solid red; }
-
-.row {
-  outline: 1px solid green; }
-
-.dflex {
+.content-flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+          align-items: center; }
+
+.one {
+  background-image: url("../img/b-one.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 18rem;
+  position: relative; }
+
+.one:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #000;
+  opacity: 0.3; }
+
+.main-menu ul li {
+  display: inline-block;
+  margin-left: 5rem; }
+
+.main-menu ul li:first-child {
+  margin-left: 0; }
+
+.main-menu ul li a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "arial";
+  color: #000;
+  opacity: 0.3; }
 
 /*# sourceMappingURL=../maps/main.css.map */
