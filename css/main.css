@@ -37,6 +37,9 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+a:visited, a:active {
+  text-decoration: none; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -72,12 +75,59 @@ table {
 .h1 {
   font-size: 4.8rem;
   color: #fff;
+  font-family: "arial";
+  font-weight: 100; }
+
+.h2 {
+  color: #3a9c61;
+  text-transform: uppercase;
+  font-size: 1.4rem;
   font-family: "arial"; }
+
+.title {
+  font-size: 3.6rem;
+  color: #3a9c61;
+  font-family: "Merriweather-Black";
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
 
 .font-logo {
   font-size: 2.4rem;
   font-family: "Merriweather-Black";
   color: #fff; }
+
+.btn {
+  font-family: "arial";
+  font-size: 1.4rem;
+  color: #fff;
+  border-width: 0.2rem;
+  border-color: #fff;
+  border-style: solid;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  -webkit-border-radius: 3rem;
+          border-radius: 3rem; }
+
+.btn-left {
+  margin-right: 1.5rem; }
+
+.btn-right {
+  margin-left: 1.5rem; }
+
+.btn-hover {
+  -webkit-transition: background-color 300ms linear, border-color 300ms linear;
+  -o-transition: background-color 300ms linear, border-color 300ms linear;
+  transition: background-color 300ms linear, border-color 300ms linear; }
+
+.btn-hover:hover {
+  background-color: #e98e19;
+  border-color: transparent;
+  -webkit-transition: background-color 300ms linear, border-color 300ms linear;
+  -o-transition: background-color 300ms linear, border-color 300ms linear;
+  transition: background-color 300ms linear, border-color 300ms linear; }
 
 header {
   width: 100%;
@@ -87,7 +137,8 @@ header {
 
 .content {
   width: 83.45%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
 
 .content-flex {
   display: -webkit-box;
@@ -107,8 +158,11 @@ header {
   background-image: url("../img/b-one.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
   padding-top: 18rem;
-  position: relative; }
+  position: relative;
+  border-bottom: 1rem solid #3a9c61; }
 
 .one:after {
   content: '';
@@ -118,8 +172,11 @@ header {
   left: 0;
   right: 0;
   z-index: 0;
-  background-color: #000;
-  opacity: 0.3; }
+  background-color: #241e18;
+  opacity: 0.7; }
+
+.two {
+  background-color: #fff; }
 
 .main-menu ul li {
   display: inline-block;
@@ -132,7 +189,50 @@ header {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-family: "arial";
-  color: #000;
-  opacity: 0.3; }
+  color: #fff;
+  opacity: 0.3;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+  position: relative; }
+
+.main-menu ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 0.2rem solid #3a9c61;
+  left: 0;
+  bottom: -1rem;
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear; }
+
+.main-menu ul li a:hover {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear; }
+
+.main-menu ul li a:hover:after {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear; }
+
+.content-center {
+  text-align: center;
+  position: relative;
+  z-index: 10; }
+
+.buttons-main {
+  margin-top: 15rem;
+  margin-bottom: 15rem; }
+
+.text-bottom {
+  margin-bottom: 5rem; }
+
+.img-bottom {
+  margin-bottom: 5rem; }
 
 /*# sourceMappingURL=../maps/main.css.map */

@@ -3,6 +3,22 @@
   font-size: $f48;
   color: $white;
   font-family: $ar;
+  font-weight: 100;
+}
+
+.h2 {
+  color: $green;
+  text-transform: uppercase;
+  font-size: $f14;
+  font-family: $ar;
+}
+
+.title{
+  font-size: $f36;
+  color: $green;
+  font-family: $mb;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .font-logo {

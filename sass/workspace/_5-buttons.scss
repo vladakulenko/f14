@@ -1,0 +1,33 @@
+//buttons
+.btn {
+  font-family: $ar;
+  font-size: $f14;
+  color: $white;
+  border-width: 0.2rem;
+  border-color: #fff;
+  border-style: solid;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  border-radius: 3rem;
+}
+
+.btn-left {
+  margin-right: 1.5rem;
+}
+
+.btn-right {
+  margin-left: 1.5rem;
+}
+
+.btn-hover {
+  transition: background-color 300ms linear, border-color 300ms linear;
+}
+
+.btn-hover:hover {
+  background-color: $orang;
+  border-color: transparent;
+  transition: background-color 300ms linear, border-color 300ms linear;
+}

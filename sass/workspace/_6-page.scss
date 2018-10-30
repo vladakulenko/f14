@@ -10,6 +10,7 @@ header {
 .content {
   width: 83.45%;
   margin: 0 auto;
+  height: 100%;
 }
 
 .content-flex {
@@ -23,8 +24,10 @@ header {
   background-image: url("../img/b-one.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   padding-top: 18rem;
   position: relative;
+  border-bottom: 1rem solid $green;
 }
 
 .one:after {
@@ -35,8 +38,13 @@ header {
   left: 0;
   right: 0;
   z-index: 0;
-  background-color: $black;
-  opacity: 0.3;
+  background-color: $over;
+  opacity: 0.7;
+}
+
+//section two
+.two{
+  background-color: $white;
 }
 
 //main-menu
@@ -53,6 +61,50 @@ header {
   font-size: $f12;
   text-transform: uppercase;
   font-family: $ar;
-  color: $black;
+  color: $white;
   opacity: 0.3;
+  transition: opacity 300ms linear;
+  position: relative;
+}
+
+.main-menu ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 0.2rem solid $green;
+  left: 0;
+  bottom: -1rem;
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.main-menu ul li a:hover {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.main-menu ul li a:hover:after {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+// main content
+.content-center {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.buttons-main {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.text-bottom {
+  margin-bottom: 5rem;
+}
+
+//img
+.img-bottom{
+  margin-bottom: 5rem;
 }
